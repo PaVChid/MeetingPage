@@ -144,7 +144,7 @@ function firstPagebuttonCall_1() {
   currentPage = "second_page";
   PersonName = "Vish"
   PersonName_SecondPage.innerHTML = PersonName_ThirdPage.innerHTML = PersonName;
-  card_image[3].attributes[1].value = card_image[4].attributes[1].value = "../images/Vish.jpg";
+  card_image[3].attributes[1].value = card_image[4].attributes[1].value = domain +  "/images/Vish.jpg";
   ProfileDescription.innerHTML = "";
 }
 
@@ -156,7 +156,7 @@ function firstPagebuttonCall_2() {
   currentPage = "second_page";
   PersonName = "Meera"
   PersonName_SecondPage.innerHTML = PersonName_ThirdPage.innerHTML = PersonName;
-  card_image[3].attributes[1].value = card_image[4].attributes[1].value = "../images/meera.jpg";
+  card_image[3].attributes[1].value = card_image[4].attributes[1].value = domain + "/images/meera.jpg";
   ProfileDescription.innerHTML = "";
 
 }
@@ -168,7 +168,7 @@ function firstPagebuttonCall_3() {
   currentPage = "second_page";
   PersonName = "Pavithran"
   PersonName_SecondPage.innerHTML = PersonName_ThirdPage.innerHTML = PersonName;
-  card_image[3].attributes[1].value = card_image[4].attributes[1].value = "../images/pavithran.jpg";
+  card_image[3].attributes[1].value = card_image[4].attributes[1].value = domain + "/images/pavithran.jpg";
   ProfileDescription.innerHTML = "An Engineer turned into an Innovator, with the combination of the two as a very good description of who I am: an analytically creative innovator who loves shaping a vision as much as making it happen.";
 }
 
