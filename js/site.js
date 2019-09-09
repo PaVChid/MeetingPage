@@ -26,11 +26,11 @@ var selectedDate = todayDate;
 var startTime = "8.30am";
 var endTime = "9.00am";
 var PersonName = "Lary Page";
-
+var domain = document.location;
 console.log(card_image);
-card_image[0].attributes[1].value = "../images/Vish.jpg";
-card_image[1].attributes[1].value = "../images/meera.jpg";
-card_image[2].attributes[1].value = "../images/pavithran.jpg";
+card_image[0].attributes[1].value = domain+"/images/Vish.jpg";
+card_image[1].attributes[1].value = "images/meera.jpg";
+card_image[2].attributes[1].value = "images/pavithran.jpg";
 
 $(document).ready(function () {
 
