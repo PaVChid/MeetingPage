@@ -199,8 +199,8 @@ function button2Call() {
 
 function confirm1Call() {
   // location.href='http://google.com';
-  startTime = "8.30pm";
-  endTime = "9.00pm";
+  startTime = "10.00am";
+  endTime = "12.00pm";
   first_page[0].style.display = "none";
   second_page[0].style.display = "none";
   third_page[0].style.display = "block";
@@ -211,8 +211,8 @@ function confirm1Call() {
 
 function confirm2Call() {
   // location.href='http://google.com';
-  startTime = "9.00pm";
-  endTime = "9.30pm";
+  startTime = "2.00pm";
+  endTime = "4.00pm";
   first_page[0].style.display = "none";
   second_page[0].style.display = "none";
   third_page[0].style.display = "block";
