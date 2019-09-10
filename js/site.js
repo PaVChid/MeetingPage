@@ -142,10 +142,10 @@ function firstPagebuttonCall_1() {
   second_page[0].style.display = "block";
   third_page[0].style.display = "none";
   currentPage = "second_page";
-  PersonName = "Vish"
+  PersonName = "Vishwanathan"
   PersonName_SecondPage.innerHTML = PersonName_ThirdPage.innerHTML = PersonName;
   card_image[3].attributes[1].value = card_image[4].attributes[1].value = "images/Vish.jpg";
-  ProfileDescription.innerHTML = "";
+  ProfileDescription.innerHTML = "Vish co-founded Coimbatore Innovation and Business Incubator (CIBI), a DST (Govt. of India) catalysed TBI, jointly promoted by the Sakthi Group of Coimbatore,and hosted by KCT, Coimbatore";
 }
 
 function firstPagebuttonCall_2() {
@@ -242,16 +242,37 @@ function hidebuttons() {
   confirm2.style.display = "none";
 }
 
+
+
 var firstName = document.getElementById("firstName");
-var lastName = document.getElementById("lastName");
+// var lastName = document.getElementById("lastName");
 var email = document.getElementById("email");
 var interest = document.getElementById("interest");
 var company = document.getElementById("company");
+// console.log(String(selectedDate).substring(0, 15));
 function getData() {
   console.log(firstName.value);
-  console.log(lastName.value);
-  console.log(email.value);
-  console.log(interest.value);
-  console.log(company.value);
-  alert("Your response has been recorded");
+  // console.log(lastName.value);
+  // console.log(email.value);
+  // console.log(interest.value);
+  // console.log(company.value);
+  emailMessage = "Hello " + firstName.value + "!<br><br>";
+
+  emailMessage += "Your office hours with "+ PersonName + " has been sheduled between " + startTime + " and " + endTime + " on " + String(selectedDate).substring(0, 15);
+  emailMessage += "<br> Thank you for showing your interest."
+
+  Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "manodhayan.18.2@protosem.tech",
+    Password : "d6a880a2-8bfd-4a5a-870c-601f0f9c5b13",
+    To : ['manodhayan.18.2@protosem.tech','pavithran@forgeforward.in'],
+    From : "manodhayan.18.2@protosem.tech",
+    Subject : "Office hours with "+ PersonName,
+    Body : emailMessage,
+    }).then(
+      message => alert("Your response has been recorded. You 'll receive a email confirmation shortly")
+    );
+    alert("Sending Email...");
+   
+  
 }
