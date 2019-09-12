@@ -142,7 +142,7 @@ function firstPagebuttonCall_1() {
   second_page[0].style.display = "block";
   third_page[0].style.display = "none";
   currentPage = "second_page";
-  PersonName = "Vishwanathan"
+  PersonName = "Vish"
   PersonName_SecondPage.innerHTML = PersonName_ThirdPage.innerHTML = PersonName;
   card_image[3].attributes[1].value = card_image[4].attributes[1].value = "images/Vish.jpg";
   ProfileDescription.innerHTML = "Vish co-founded Coimbatore Innovation and Business Incubator (CIBI), a DST (Govt. of India) catalysed TBI, jointly promoted by the Sakthi Group of Coimbatore,and hosted by KCT, Coimbatore";
